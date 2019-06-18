@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="/static/style1.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie App</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-light bg-light">
+	  <a class="navbar-brand" href="/">
+	    <img src="/static/1.png" width="70" height="40" class="d-inline-block align-top" alt="">
+	    
+	  </a>
+	  <ul class="navbar-nav">
+			<li class="nav-item">
+				<form action="/results" method="GET" class="d-flex justify-content-center">
+					<input class="box justify-content-center" type="text" name="search" placeholder="search a movie"> <br>
+					<button type="submit" class="btn btn-secondary justify-content-center"> Search</button>
+				</form>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<strong>some movie may don't have images beacuse they don't allowed us to use them</strong> <br> <br>
+		<div class="row spacingx d-flex justify-content-center">
+			<div class="col-m">
+				<img src='<%= mdata["Poster"] %>' class="img-thumbnail"> <br> <br>
+			</div>
+			<div class="col-m">
+				<p>
+					Name: <%= mdata["Title"] %> <br> <br>
+					Released: <%= mdata["Released"] %><br> <br>
+					Runtime: <%= mdata["Runtime"] %><br> <br>
+					Genre: <%= mdata["Genre"] %><br> <br>
+					Director: <%= mdata["Director"] %><br> <br>
+					Writer: <%= mdata["Writer"] %><br> <br>
+					Actors: <%= mdata["Actors"] %><br> <br>
+					Plot: <%= mdata["Plot"] %><br> <br>
+					Language: <%= mdata["Language"] %><br> <br>
+					Country: <%= mdata["Country"] %><br> <br>
+					Awards: <%= mdata["Awards"] %><br> <br>
+					IMDB Rating: <%= mdata["imdbRating"] %><br> <br>
+					Production: <%= mdata["Production"] %><br> <br>
+					Website: <a href='<%= mdata["Website"] %>'> <%= mdata["Website"] %></a><br> <br>
+				</p>
+				
+			</div>
+		</div>
+		
+
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+	
+</body>
+</html>

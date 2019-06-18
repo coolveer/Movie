@@ -1,0 +1,65 @@
+body{
+	background-color: #9C9C9C;
+	font-family: 'Courgette', cursive;
+}
+.box{
+	border-radius: 25px;
+	padding-left: 10px
+}
+form{
+	margin-top: auto;
+}
+
+input[type='text']{
+	width: 60%;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.logo{
+	margin-left: 25%;
+	height: 10%;
+	width: 40%;
+	border-radius: 25px;
+}
+h2{
+	color: gray;
+	margin-top: 20%;
+}
+strong{
+	color: white;
+}
+
+
+
+section{
+	margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+	section{
+	margin-top: 65%;
+}
+  
+}
+
+.card{
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+ul li form button {
+	margin-right: 8%;
+}
+.spacingx{
+	margin-left: 2%
+}
+p{
+	background-color: rgba(255,255,255,0.75);
+
+}
+
+
